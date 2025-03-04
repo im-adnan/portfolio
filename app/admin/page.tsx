@@ -3,9 +3,12 @@
 import { useState, FormEvent, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { LoginDialog } from "@/components/LoginDialog";
 
 export default function AdminForm() {
   const router = useRouter();
+  const [showLoginDialog, setShowLoginDialog] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [formData, setFormData] = useState({
     title: "",
     content: "",
@@ -16,11 +19,13 @@ export default function AdminForm() {
     const checkAuth = async () => {
       const res = await fetch("/api/authcheck");
       if (!res.ok) {
-        router.push("/login");
+        setShowLoginDialog(true);
+      } else {
+        setIsAuthenticated(true);
       }
     };
     checkAuth();
-  }, [router]);
+  }, []);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -48,12 +53,27 @@ export default function AdminForm() {
         method: "POST",
       });
       if (res.ok) {
-        router.push("/login");
+        setIsAuthenticated(false);
+        setShowLoginDialog(true);
       }
     } catch (error) {
       console.error("Error during logout:", error);
     }
   };
+
+  const handleLoginSuccess = () => {
+    setIsAuthenticated(true);
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <LoginDialog
+        open={showLoginDialog}
+        onOpenChange={setShowLoginDialog}
+        onLoginSuccess={handleLoginSuccess}
+      />
+    );
+  }
 
   return (
     <div className="container mx-auto px-4 py-6">
