@@ -5,13 +5,13 @@ const projects = [
   {
     title: 'Revhealth',
     description: 'Hospital insurance verification platform',
-    image: 'https://raw.githubusercontent.com/im-adnan/portfolio/main/revhealth.png',
+    image: '/revhealth.png',
     url: '#'
   },
   {
     title: 'VocalCode',
     description: 'English Language Learning Platform',
-    image: 'https://raw.githubusercontent.com/im-adnan/portfolio/main/vocalcode.png',
+    image: '/vocalcode.png',
     url: 'https://vocalcode.co.in/'
   }
 ]
