@@ -96,7 +96,7 @@ export default function WorkPage() {
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-6xl font-bold mb-12 dark:text-white"
+        className="text-6xl font-bold mb-12 dark:text-white bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-[1.1] pb-2"
       >
         Projects I’ve Worked On
       </motion.h1>
@@ -107,7 +107,7 @@ export default function WorkPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
-            className="group relative bg-white dark:bg-zinc-800 rounded-xl shadow-lg overflow-hidden"
+            className="group relative bg-white dark:bg-zinc-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
             <div className="relative aspect-video overflow-hidden">
               <Image
@@ -115,7 +115,7 @@ export default function WorkPage() {
                 alt={`${project.name} project screenshot`}
                 width={600}
                 height={400}
-                className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                className="object-cover transform group-hover:scale-105 transition-all duration-500 hover:brightness-90"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
@@ -128,7 +128,7 @@ export default function WorkPage() {
                     href={project.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors"
+                    className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-md text-sm hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     Visit Website
                   </Link>
@@ -138,7 +138,7 @@ export default function WorkPage() {
                     href={project.appLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 text-white px-4 py-2 rounded-md text-sm hover:bg-green-600 transition-colors"
+                    className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md text-sm hover:bg-gradient-to-r hover:from-green-600 hover:to-teal-600 transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     View App
                   </Link>

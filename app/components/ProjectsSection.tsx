@@ -9,16 +9,16 @@ const projects = [
     url: 'https://yeotaskin.com/'
   },
   {
-    title: 'Revhealth',
-    description: 'Hospital insurance verification platform',
-    image: '/revhealth.png',
-    url: '#'
-  },
-  {
     title: 'VocalCode',
     description: 'English Language Learning Platform',
     image: '/vocalcode.png',
     url: 'https://vocalcode.co.in/'
+  },
+  {
+    title: 'Revhealth',
+    description: 'Hospital insurance verification platform',
+    image: '/revhealth.png',
+    url: '#'
   }
 ]
 
@@ -32,7 +32,7 @@ export default function ProjectsSection() {
       >
         Selected Work
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
+      <div className="grid grid-cols-3 gap-24">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
