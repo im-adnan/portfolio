@@ -48,7 +48,11 @@ export function LoginDialog({ open, onOpenChange, onLoginSuccess }: LoginDialogP
         <div className="fixed inset-0 bg-white" />
       )}
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="sm:max-w-md bg-white border">
+        <DialogContent 
+  className="sm:max-w-md bg-white border [&>button]:hidden"
+  onPointerDownOutside={(e: Event) => e.preventDefault()}
+  onEscapeKeyDown={(e: Event) => e.preventDefault()}
+>
         <DialogHeader>
           <DialogTitle>Admin Login</DialogTitle>
         </DialogHeader>
