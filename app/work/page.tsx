@@ -5,6 +5,13 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
+    name: 'Yeotaskin Agent',
+    description: 'Developed a comprehensive mobile application for Yeotaskin agents that handles user authentication, product purchases, inventory management, and sales tracking. The app features a dual-wallet system with Income and E-wallet functionality, along with detailed sales information tracking for both individual and team performance.',
+    image: '/yeotaskin.png',
+    website: 'https://yeotaskin.com/',
+    appLink: 'https://play.google.com/store/apps/details?id=com.ztoo.yeotaskin',
+  },
+  {
     name: 'Anemix',
     description: "Oversaw the creation of a women's health platform (React website and mobile app) to track period-related information and connect users with experts for health consultations.",
     image: '/anemix.png',

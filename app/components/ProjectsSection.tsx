@@ -3,6 +3,12 @@ import Image from 'next/image'
 
 const projects = [
   {
+    title: 'Yeotaskin Agent',
+    description: 'Sales and inventory management platform for agents',
+    image: '/yeotaskin.png',
+    url: 'https://yeotaskin.com/'
+  },
+  {
     title: 'Revhealth',
     description: 'Hospital insurance verification platform',
     image: '/revhealth.png',
