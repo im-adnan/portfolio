@@ -50,6 +50,7 @@ export default function ContactPage() {
   }
 
   return (
+    <>
       <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-2 pb-20 sm:pb-28">
         <div className="space-y-2 mb-4">
           <div className="space-y-2">
@@ -263,6 +264,26 @@ export default function ContactPage() {
           </CardContent>
         </Card>
       </div>
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/919548277449"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center z-50"
+        aria-label="Connect on WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 2.17.7 4.19 1.89 5.84L2.2 22l4.28-1.69c1.53.94 3.33 1.49 5.25 1.49 5.52 0 10-4.48 10-10S17.52 2 12 2zm.89 14.24l-.06.06c-.88.88-1.92 1.49-3.07 1.77-1.14.28-2.31.19-3.39-.26l-.4-.18-2.63 1.04.97-2.72-.2-.43c-.51-1.07-.64-2.25-.39-3.4.25-1.14.83-2.19 1.67-3.04l.06-.06c2.17-2.17 5.7-2.17 7.87 0 2.17 2.18 2.17 5.71 0 7.88z"
+          />
+        </svg>
+      </a>
+    </>
   )
 }
 
