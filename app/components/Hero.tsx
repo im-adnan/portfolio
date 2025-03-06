@@ -32,13 +32,12 @@ export default function Hero() {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-6xl md:text-8xl font-bold tracking-tight dark:text-white mb-8 md:mb-0"
+          className="text-5xl md:text-7xl font-bold tracking-tight dark:text-white mb-8 md:mb-0"
         >
-          PRODUCT
+          Hi, There, 👋
           <br />
-          DEVELOPMENT
-          <br />
-          MANAGER
+         I'm SYED MOHD
+         <br /> ADNAN
         </motion.h1>
 
         <motion.div 
@@ -77,10 +76,12 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
           className="text-right"
         >
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight dark:text-white">
-            SYED MOHD
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight dark:text-white">
+            STUDENT
             <br />
-            ADNAN
+            PROJECT MANAGER
+            <br />
+            DEVELOPER
           </h2>
         </motion.div>
       </div>
