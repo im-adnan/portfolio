@@ -6,6 +6,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
+export const runtime = "edge"
+
 interface LoginDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;

@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { Moon, Sun } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
+export const runtime = "edge"
+
 interface NavigationProps {
   isDarkMode: boolean
   setIsDarkMode: (value: boolean) => void

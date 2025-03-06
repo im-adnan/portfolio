@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+export const runtime = "edge"
+
 const projects = [
   {
     title: 'Yeotaskin Agent',

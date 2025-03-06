@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 export default function Footer() {
   return (
     <footer className="py-4 border-t border-zinc-200 dark:border-zinc-800">

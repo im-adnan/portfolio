@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 import ProjectsSection from './components/ProjectsSection'
 import ExpertiseSection from './components/ExpertiseSection'
 
+export const runtime = "edge"
+
 export default function Home() {
   return (
     <div className="min-h-screen">

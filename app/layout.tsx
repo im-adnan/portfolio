@@ -6,6 +6,8 @@ import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import { useState } from 'react'
 
+export const runtime = "edge"
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({

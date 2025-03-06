@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 
+export const runtime = "edge"
+
 const features = [
   "Build cross-platform mobile apps (iOS & Android) using Flutter",
   "Develop web applications with responsive design and robust backend integration",

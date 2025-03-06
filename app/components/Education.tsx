@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 export default function Education() {
   return (
     <section className="mb-8">

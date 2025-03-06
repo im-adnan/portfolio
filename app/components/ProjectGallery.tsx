@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+export const runtime = "edge"
+
 const projects = [
   { name: 'Anemix', url: 'https://anemix.vercel.app/' },
   { name: 'Nbrly', url: 'https://www.nbrlyapp.com/' },

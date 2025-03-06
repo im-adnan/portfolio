@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import Image from 'next/image';
 
+export const runtime = "edge"
+
 export default function Hero() {
   return (
     <section className="min-h-[80vh] flex flex-col justify-between py-12">

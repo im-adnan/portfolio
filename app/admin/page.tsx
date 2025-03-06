@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { LoginDialog } from "@/components/LoginDialog";
 
+export const runtime = "edge"
+
 export default function AdminForm() {
   const router = useRouter();
   const [showLoginDialog, setShowLoginDialog] = useState(false);

@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const runtime = "edge"
+
 export async function POST() {
   debugger; // Debug point for logout request
   console.log('[Logout API] Processing logout request');

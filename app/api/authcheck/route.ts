@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
+export const runtime = "edge"
+
 export async function GET() {
   debugger; // Debug point for auth check
   console.log('[Auth Check] Checking authentication status');

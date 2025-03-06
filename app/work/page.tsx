@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
+
+export const runtime = "edge"
+
 const projects = [
   {
     name: 'Yeotaskin Agent',
