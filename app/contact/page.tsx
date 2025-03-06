@@ -68,9 +68,42 @@ export default function ContactPage() {
               I'm always interested in hearing about new projects and opportunities. 
               Feel free to reach out if you'd like to discuss a potential collaboration.
             </p>
-            <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-              <a href="mailto:sayedmuhammadadnan@gmail.com">Send Email</a>
-            </Button>
+            <form action="https://formsubmit.co/sayedmuhammadadnan@gmail.com" method="POST" className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  className="p-3 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  className="p-3 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                name="_subject"
+                placeholder="Subject"
+                className="w-full p-3 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                className="w-full p-3 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
+                rows={5}
+                required
+              ></textarea>
+              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
+              <Button type="submit" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                Send Message
+              </Button>
+            </form>
           </div>
         </div>
 
