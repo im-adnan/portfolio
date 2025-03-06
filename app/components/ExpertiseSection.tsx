@@ -24,7 +24,7 @@ export default function ExpertiseSection() {
             Bringing Ideas to Life
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-12">
-            I specialize in creating <span className="font-medium text-primary">web applications</span>, <span className="font-medium text-primary">hybrid iOS applications</span>, and <span className="font-medium text-primary">Android applications</span>. With a strong background in <span className="font-medium text-primary">Flutter development</span> and <span className="font-medium text-primary">end-to-end project management</span>, I oversee the entire product lifecycle—from concept to deployment.
+            I specialize in creating <span className="font-medium text-primary">web applications</span>, <span className="font-medium text-primary">hybrid iOS applications</span>, and <span className="font-medium text-primary">Android applications</span>. I offer <span className="font-medium text-primary">end-to-end project management</span> and deliver <span className="font-medium text-primary">scalable solutions</span> tailored to your business needs.
           </p>
         </motion.div>
 
@@ -49,8 +49,12 @@ export default function ExpertiseSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex justify-center mt-12"
         >
-          <Button className="px-8 py-6 text-lg" variant="default">
-            Let's Turn Your Vision into Reality
+          <Button 
+            className="px-8 py-6 text-lg flex items-center gap-2 hover:scale-105 transition-transform text-blue-500"
+            variant="default"
+            onClick={() => window.location.href = '/contact'}
+          >
+            Contact and Let's Turn Your Vision into Reality <span className="ml-1">→</span>
           </Button>
         </motion.div>
       </div>
